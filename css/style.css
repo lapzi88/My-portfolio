@@ -1,0 +1,428 @@
+.container {
+    padding: 0 15px;
+}
+
+@media (min-width: 575.98px) {
+    .container {
+        max-width: 540px;
+        margin: auto;
+        padding: 0;
+    }
+}
+
+@media (min-width: 767.98px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 991.98px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1199.98px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.text-my-photo-list-2 {
+    margin-top: 20px;
+}
+
+
+.head-title-text-2 {
+    padding: 10px 20px;
+    background-color: transparent;
+    /* Сделать кнопку прозрачной */
+    border: 0px solid #000000;
+    /* Добавить границу */
+    border-radius: 5px;
+    color: #000000;
+    font-family: "Press Start 2P", serif;
+    font-style: normal;
+    font-size: 10px;
+    /* Цвет текста */
+    cursor: pointer;
+}
+
+
+
+
+.head-list-title {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none;
+}
+
+.icon-contact-1 {
+    width: 28px;
+
+}
+
+.create-line {
+    width: 100%;
+    border-top: 3px solid #252525;
+}
+
+.head-title-2 {
+    display: flex;
+    align-items: center;
+}
+
+.icon-contact-1,
+.icon-contact-2 {
+    margin: 0 5px;
+}
+
+.icon-contact-2 {
+    width: 35px;
+}
+
+
+.head-title {
+    cursor: pointer;
+    font-family: "Press Start 2P", serif;
+    font-style: normal;
+    font-size: 10px;
+    max-width: 1920px;
+}
+
+.head-title {
+    color: rgb(0, 0, 0);
+    transition: 1s ease all;
+}
+
+.head-title:hover {
+    color: rgb(150, 150, 150);
+}
+
+/* фото */
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.img-me {
+    display: flex;
+    justify-content: left;
+    width: 350px;
+    margin-top: -100px;
+    min-width: -400px;
+    opacity: 0;
+    /* Начальное состояние - невидимое */
+    animation: fadeIn 2s forwards;
+    /* Анимация появления */
+}
+
+@media screen and (max-width: 600px) {
+    .img-me {
+        margin-top: -10px;
+        width: 220px;
+    }
+}
+
+.img-me {
+    display: flex;
+    justify-content: left;
+    width: 350px;
+    margin-top: -100px;
+    min-width: -400px;
+}
+
+@media screen and (max-width: 600px) {
+    .img-me {
+        margin-top: -10px;
+        width: 220px;
+    }
+
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(310deg);
+    }
+}
+
+.box2 {
+    position: absolute;
+    width: 500px;
+
+    top: 500px;
+    height: 440px;
+    opacity: 0.4;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 67% 33% 39% 61% / 39% 30% 70% 61%;
+    z-index: 1;
+    /* Установить z-index для box1 */
+    animation: rotate 12s linear infinite;
+    /* Добавить анимацию вращения */
+}
+
+.box1 {
+    position: absolute;
+    width: 400px;
+    right: 150px;
+    top: 100px;
+    height: 340px;
+    opacity: 0.4;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 67% 33% 39% 61% / 39% 30% 70% 61%;
+    z-index: 1;
+    /* Установить z-index для box1 */
+    animation: rotate 10s linear infinite;
+    /* Добавить анимацию вращения */
+}
+
+.text-container,
+.head-photo-me-1,
+.text-my-photo-list-2 {
+    position: relative;
+    z-index: 2;
+    /* Установить z-index для текста и других элементов выше box1 */
+}
+
+.bor {
+    background-color: #000000;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.text-my-photo-list-title-3 {
+
+    list-style: none;
+    margin-top: 50px;
+}
+
+/*   */
+/* инфо про меня */
+
+.img-me {
+    display: block;
+    width: 350px;
+    margin-top: -100px;
+    min-width: -400px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@media screen and (max-width: 600px) {
+    .img-me {
+        margin-top: -10px;
+        width: 220px;
+    }
+}
+
+
+.head-text-me {
+    font-family: "Press Start 2P", serif;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 100px;
+}
+
+.head-info-me {
+    width: 450px;
+    padding-top: 20px;
+    font-family: "Press Start 2P", serif;
+    font-style: normal;
+    font-size: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.text-my-photo-list-title {
+    display: flex;
+    justify-content: center;
+    /* Центрирование по горизонтали */
+    align-items: center;
+    /* Центрирование по вертикали */
+    text-align: left;
+    /* Выравнивание текста по левому краю */
+}
+
+.img-me {
+    display: block;
+    width: 350px;
+    margin-right: 20px;
+    width: 350px;
+    margin-right: 20px;
+    /* Отступ справа для изображения */
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@media screen and (max-width: 600px) {
+    .img-me {
+        margin-top: -10px;
+        width: 220px;
+    }
+}
+
+.head-text-me,
+.head-info-me {
+    opacity: 0;
+    /* Начальное состояние - невидимое */
+    animation: fadeIn 1s forwards;
+    /* Анимация появления */
+    animation-delay: 0.5s;
+    /* Задержка анимации для текста */
+}
+
+.head-text-me {
+    margin: 0;
+}
+
+.head-info-me {
+    margin: 10px 0 0 0;
+    /* Отступ сверху для абзаца */
+}
+
+.head-text-me-2 {
+    font-family: "Press Start 2P", serif;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+    opacity: 0;
+    /* Начальное состояние - невидимое */
+    animation: fadeIn 2s forwards;
+    /* Анимация появления */
+    animation-delay: 1s;
+    /* Задержка анимации для текста */
+    margin: 0;
+    color: #000000;
+    /* Цвет текста белый */
+}
+
+.head-info-me-2 {
+    padding-top: 20px;
+    font-family: "Press Start 2P", serif;
+    font-style: normal;
+    font-size: 10px;
+    text-align: center;
+    opacity: 0;
+    /* Начальное состояние - невидимое */
+    animation: fadeIn 2s forwards;
+    /* Анимация появления */
+    animation-delay: 1s;
+    /* Задержка анимации для текста */
+    margin: 10px 0 0 0;
+    /* Отступ сверху для абзаца */
+    color: #000000;
+    /* Цвет текста белый */
+}
+
+.head-photo-me-1 {
+
+    width: 350px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 35%;
+}
+
+/* фыв */
+@media (max-width: 768px) {
+
+    .head-text-me,
+    .head-info-me,
+    .head-text-me-2,
+    .head-info-me-2 {
+        font-size: 8px;
+        /* Пример размера текста для мобильных устройств */
+    }
+
+    .head-text-me {
+        margin-top: 50px;
+    }
+
+    .head-photo-me-1 {
+        width: 100px;
+    }
+
+    .head-info-me {
+        width: 250px;
+    }
+}
+
+.list-title-skill {
+    border: 3px solid #000000;
+    padding: 20px;
+    border-radius: 5px;
+    list-style: none;
+    align-items: center;
+    width: 250px;
+}
+
+.list-skill {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.icon-list {
+    margin-left: 70px;
+    width: 100px;
+}
+
+.info-skill {
+    font-family: "Press Start 2P", serif;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+}
+
+.my-skill-text {
+    font-family: "Press Start 2P", serif;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.my-skill-info {
+    font-family: "Press Start 2P", serif;
+    font-style: normal;
+    font-size: 10px;
+}
