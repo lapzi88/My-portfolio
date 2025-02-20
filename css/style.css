@@ -299,6 +299,12 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+    .list-title-skill {
+        width: 10px;
+    }
+}
+
 .head-text-me,
 .head-info-me {
     opacity: 0;
@@ -386,6 +392,8 @@
         width: 250px;
     }
 }
+
+
 
 .list-title-skill {
     border: 3px solid #000000;
